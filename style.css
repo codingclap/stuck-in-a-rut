@@ -73,7 +73,7 @@
      flex-direction: column;
      justify-content: space-between;
      align-items: center;
-     gap: 3em;
+     gap: 2em;
      width: 90%;
      min-height: calc(90vh - var(--header-height));
      max-width: 90ch;
@@ -191,7 +191,7 @@
 
  /* The dots/bullets/indicators */
  .stuck_main_container .bullets-container {
-  margin-top: -32px;
+  margin-top: -18px;
 }
 .stuck_main_container .dot {
     cursor: pointer;
