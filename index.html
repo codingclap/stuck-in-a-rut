@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuck in a Rut</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="stuck_main_container" id="main-container" style="background-image:url('assets/background-image.jpg');transition: 0.5s ease-in-out;">
+
+
+        <!-------Slider Area -------------->
+        <section class="stuck stuck_slider_container wrapper" data-is-visible="true">
+		
+            <div class="stuck_slider_text" id="stuck_head"  data-header="">
+			
+				<div class="header-logo tx-center">
+				
+					<img src="assets/logo.png">
+				
+				</div>
+				
+                <div class="stuck_heading">
+                    <h1>Stuck in a Rut?</h1>
+                </div>
+                <div class="stuck_text">
+                    <p>Do you feel like you're trapped in a rut with a near-constant sense of frustration? When you
+                        don't know how to get back into the flow of positive energy, you can experience anxiety,
+                        depression, sadness, and fear from this sense of being unwillingly anchored to an unhappy life.
+                        You don't have to live this way! Take our quiz to figure out why you're stuck and what you can
+                        do about it.</p>
+                </div>
+            </div> 
+
+            <div class="stuck_slider_question" id="reset">
+
+                <!-------Slide - 1 -------------->
+                <div class="slide" data-question-number="1" id="q1" data-active="true" data-value="">
+                    <h3 data-font-family="Medium" data-font-size="large2">When you make daily choices about how to spend
+                        your time, who do you think of first?</h3>
+                    <!-- Options -->
+                    <div class="options" data-font-family="Regular">
+                        <div class="option" onclick="test('q1','q2')">
+                            <input type="radio" name="group-role" id="group-role-1" value="1">
+                            <label for="group-role-1">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I check in with my higher self to make sure my goals
+                                        align.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q1','q3')">
+                            <input type="radio" name="group-role" id="group-role-2" value="2">
+                            <label for="group-role-2">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I think about what best serves my loved ones.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q1','q2')">
+                            <input type="radio" name="group-role" id="group-role-3" value="3">
+                            <label for="group-role-3">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I have so many commitments already, I just keep to the
+                                        calendar.
+                                        I don't make many fresh choices.</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-------Slide - 1 -------------->
+
+                <!-------Slide - 2 -------------->
+                <div class="slide" data-question-number="2" id="q2" data-active="false" data-value="">
+                    <h3 data-font-family="Medium" data-font-size="large2">How do you feel about change?</h3>
+
+                    <div class="options" data-font-family="Regular">
+                        <div class="option" onclick="test('q2','q4')">
+                            <input type="radio" name="group-role" id="group-role-4" value="4">
+                            <label for="group-role-4">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I usually prefer routine</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q2','q3')">
+                            <input type="radio" name="group-role" id="group-role-5" value="5">
+                            <label for="group-role-5">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I like to change things up occasionally.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q2','q3')">
+                            <input type="radio" name="group-role" id="group-role-6" value="6">
+                            <label for="group-role-6">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I love to keep things fresh, and I get frustrated when
+                                        they're too monotonous. </p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-------Slide - 2 -------------->
+
+                <!-------Slide - 3 -------------->
+                <div class="slide" data-question-number="3" id="q3" data-active="false" data-value="">
+                    <h3 data-font-family="Medium" data-font-size="large2">Do you make time for yourself each day?
+                    </h3>
+
+                    <div class="options" data-font-family="Regular">
+                        <div class="option" onclick="test('q3','q4')">
+                            <input type="radio" name="group-role" id="group-role-7" value="4">
+                            <label for="group-role-7">
+                                <div class="option-content">
+                                    <p data-font-size="normal">No, I don't take time for self-care.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q3','q5')">
+                            <input type="radio" name="group-role" id="group-role-8" value="5">
+                            <label for="group-role-8">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I make time for self-care occasionally.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q3','q5')">
+                            <input type="radio" name="group-role" id="group-role-9" value="6">
+                            <label for="group-role-9">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I do activities like meditation and journaling, but I
+                                        keep circling around the same frustrations. </p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-------Slide - 3 -------------->
+
+                <!-------Slide - 4 -------------->
+                <div class="slide" data-question-number="4" id="q4" data-active="false" data-value="">
+                    <h3 data-font-family="Medium" data-font-size="large2">How is your activity level?
+                    </h3>
+
+                    <div class="options" data-font-family="Regular">
+                        <div class="option" onclick="test('q4','endpoint-1')">
+                            <input type="radio" name="group-role" id="group-role-10" value="4">
+                            <label for="group-role-10">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I'm so busy I barely have time to think, but I feel like
+                                        I'm not getting anywhere. </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q4','q5')">
+                            <input type="radio" name="group-role" id="group-role-11" value="5">
+                            <label for="group-role-11">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I go through the motions each day but feel listless in my
+                                        down time. </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q4','endpoint-5')">
+                            <input type="radio" name="group-role" id="group-role-12" value="6">
+                            <label for="group-role-12">
+                                <div class="option-content">
+                                    <p data-font-size="normal">I have some leisure time, but it gets away from me. I
+                                        feel like I get stuck and spin my wheels. </p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-------Slide - 4 -------------->
+                <!-------Slide - 5 -------------->
+                <div class="slide" data-question-number="5" id="q5" data-active="false" data-value="">
+                    <h3 data-font-family="Medium" data-font-size="large2">Can you pinpoint the source of your
+                        stagnation?
+                    </h3>
+
+                    <div class="options" data-font-family="Regular">
+                        <div class="option" onclick="test('q5','endpoint-2')">
+                            <input type="radio" name="group-role" id="group-role-13" value="4">
+                            <label for="group-role-13">
+                                <div class="option-content">
+                                    <p data-font-size="normal">Yes, there's a definite anchor holding me down.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q5','endpoint-4')">
+                            <input type="radio" name="group-role" id="group-role-14" value="5">
+                            <label for="group-role-14">
+                                <div class="option-content">
+                                    <p data-font-size="normal">Yes, I know what to fix but I don't know how.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="option" onclick="test('q5','endpoint-3')">
+                            <input type="radio" name="group-role" id="group-role-15" value="6">
+                            <label for="group-role-15">
+                                <div class="option-content">
+                                    <p data-font-size="normal">No, I have no idea why I feel this way. </p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-------Slide - 5 -------------->
+                 
+            </div>
+            <div style="text-align:center" class="bullets-container">
+                <span class="dot" id="bullet-1" data-bullet="visited"></span>
+                <span class="dot" id="bullet-2" data-bullet=""></span>
+                <span class="dot" id="bullet-3" data-bullet=""></span>
+                <span class="dot" id="bullet-4" data-bullet=""></span>
+                <span class="dot" id="bullet-5" data-bullet=""></span>
+              </div>
+        </section>
+        <!-------Slider Area -------------->
+
+
+        <!------- Final Output Area -------------->
+
+        <section class="stuck_result_container" id="endpoint-1" data-is-visible="false" >
+		
+			<div class="footer-logo tx-center">
+				
+				<img src="assets/logo.png">
+				
+			</div>
+           
+		   <div class="stuck_result">
+                <div class="stuck_result_img">
+				<img src="assets/icons-01.svg">
+                </div>
+                <div class="stuck_result_text">
+                    <h3>Take a Quiet Retreat</h3>
+                    <p>You're feeling stuck not because of stagnation but because of excessive business with repetitive activities. The best way for you to get out of this rut is to slow down and step back for a moment. Start saying no to commitments that don't make your heart sing and find time for yourself to do some soul searching. Conduct a life audit and analyze what you're giving precious time and energy to. Take a mental health day, turn off your devices, and meditate or journal on your heart's desires so you can return with a refreshed life map.</p>
+
+                </div>
+                
+            </div>
+			<div class="resourc-link">
+			<button onclick="reset(q1)">Start Again</button>
+			<h3> Resources</h3>
+				
+		
+				
+				<p><a href="https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes">https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes</a></p>			
+				<p><a href="https://www.divaswithapurpose.com/15-questions-to-ask-yourself/">https://www.divaswithapurpose.com/15-questions-to-ask-yourself/</a></p>					
+				<p><a href="https://lonerwolf.com/soul-searching/">https://lonerwolf.com/soul-searching/</a></p>					
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a>	</p>				
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a></p>					
+				<p><a href="https://www.betterup.com/blog/feeling-stuck">https://www.betterup.com/blog/feeling-stuck</a></p>					
+				<p><a href="https://www.shinesheets.com/how-to-get-unstuck-in-your-life/">https://www.shinesheets.com/how-to-get-unstuck-in-your-life/</a></p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359">https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359</a>	</p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869">https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869</a>	</p>				
+				<p><a href="https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410">https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410</a></p>	
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725">https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725</a>	</p>	
+				<p><a href="https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116">https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116</a></p>	
+			</div>
+		
+			
+			
+        </section>
+
+        <section class="stuck_result_container" id="endpoint-2" data-is-visible="false" >
+		
+			<div class="footer-logo tx-center">
+				
+				<img src="assets/logo.png">
+				
+			</div>
+           
+		   <div class="stuck_result">
+                <div class="stuck_result_img">
+				<img src="assets/icons-02.svg">
+                </div>
+                <div class="stuck_result_text">
+                    <h3>Make a Change</h3>
+						<p>You feel stuck because you've allowed a powerful area of your life to stagnate. This may be a relationship, job, home, or family dynamic that simply isn't working for you. It's time to cut ties with the anchor that's keeping you mired. Let go of what doesn't serve your highest self and make room for new and wondrous things to enter. If you're not sure where to start, consult a psychic for help identifying the blockages in your life and finding a positive path forward.</p>
+
+                </div>
+                
+            </div>
+			<div class="resourc-link">
+			<button onclick="reset(q1)">Start Again</button>
+			<h3> Resources</h3>
+				
+		
+				
+				<p><a href="https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes">https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes</a></p>			
+				<p><a href="https://www.divaswithapurpose.com/15-questions-to-ask-yourself/">https://www.divaswithapurpose.com/15-questions-to-ask-yourself/</a></p>					
+				<p><a href="https://lonerwolf.com/soul-searching/">https://lonerwolf.com/soul-searching/</a></p>					
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a>	</p>				
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a></p>					
+				<p><a href="https://www.betterup.com/blog/feeling-stuck">https://www.betterup.com/blog/feeling-stuck</a></p>					
+				<p><a href="https://www.shinesheets.com/how-to-get-unstuck-in-your-life/">https://www.shinesheets.com/how-to-get-unstuck-in-your-life/</a></p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359">https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359</a>	</p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869">https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869</a>	</p>				
+				<p><a href="https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410">https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410</a></p>	
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725">https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725</a>	</p>	
+				<p><a href="https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116">https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116</a></p>	
+			</div>
+        </section>
+
+        <section class="stuck_result_container" id="endpoint-3" data-is-visible="false" >
+		
+			<div class="footer-logo tx-center">
+				
+				<img src="assets/logo.png">
+				
+			</div>
+           
+		   <div class="stuck_result">
+                <div class="stuck_result_img">
+				<img src="assets/icons-03.svg">
+                </div>
+                <div class="stuck_result_text">
+                    <h3>Create a Vision Board</h3>
+						<p> You feel both stuck and aimless. You're having trouble identifying your goals, and without a dream to pursue it's impossible to move forward. Get a large piece of paper or create a blank digital canvas and start cutting out and pasting images and words that inspire you. Let your passion and joy carry you along through the project till you have an inspiring image of what you want to do with your life. Then, get to work charting actionable steps to help you achieve it.</p>
+
+                </div>
+                
+            </div>
+			<div class="resourc-link">
+			<button onclick="reset(q1)">Start Again</button>
+			<h3> Resources</h3>
+				
+		
+				
+				<p><a href="https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes">https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes</a></p>			
+				<p><a href="https://www.divaswithapurpose.com/15-questions-to-ask-yourself/">https://www.divaswithapurpose.com/15-questions-to-ask-yourself/</a></p>					
+				<p><a href="https://lonerwolf.com/soul-searching/">https://lonerwolf.com/soul-searching/</a></p>					
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a>	</p>				
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a></p>					
+				<p><a href="https://www.betterup.com/blog/feeling-stuck">https://www.betterup.com/blog/feeling-stuck</a></p>					
+				<p><a href="https://www.shinesheets.com/how-to-get-unstuck-in-your-life/">https://www.shinesheets.com/how-to-get-unstuck-in-your-life/</a></p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359">https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359</a>	</p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869">https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869</a>	</p>				
+				<p><a href="https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410">https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410</a></p>	
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725">https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725</a>	</p>	
+				<p><a href="https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116">https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116</a></p>	
+			</div>
+        </section>
+
+        <section class="stuck_result_container" id="endpoint-4" data-is-visible="false" >
+		
+			<div class="footer-logo tx-center">
+				
+				<img src="assets/logo.png">
+				
+			</div>
+           
+		   <div class="stuck_result">
+                <div class="stuck_result_img">
+				<img src="assets/icons-04.svg">
+                </div>
+                <div class="stuck_result_text">
+                    <h3>Find Support</h3>
+						<p>Though you feel impossibly stuck, you have a good grasp of what's holding you in place. Whether you're in debt, in a dead-end career, or living in a home that needs major repairs, you're quite aware of the problem. You just don't know how to proceed. It's time to reach out for help, though that's not your natural inclination. Search for resources at the library, join a support group, start working with a therapist, or contact a phone psychic. Taking that helping hand will make all the difference.</p>
+
+                </div>
+                
+            </div>
+			<div class="resourc-link">
+			<button onclick="reset(q1)">Start Again</button>
+			<h3> Resources</h3>
+				
+		
+				
+				<p><a href="https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes">https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes</a></p>			
+				<p><a href="https://www.divaswithapurpose.com/15-questions-to-ask-yourself/">https://www.divaswithapurpose.com/15-questions-to-ask-yourself/</a></p>					
+				<p><a href="https://lonerwolf.com/soul-searching/">https://lonerwolf.com/soul-searching/</a></p>					
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a>	</p>				
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a></p>					
+				<p><a href="https://www.betterup.com/blog/feeling-stuck">https://www.betterup.com/blog/feeling-stuck</a></p>					
+				<p><a href="https://www.shinesheets.com/how-to-get-unstuck-in-your-life/">https://www.shinesheets.com/how-to-get-unstuck-in-your-life/</a></p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359">https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359</a>	</p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869">https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869</a>	</p>				
+				<p><a href="https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410">https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410</a></p>	
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725">https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725</a>	</p>	
+				<p><a href="https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116">https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116</a></p>	
+			</div>
+        </section>
+
+        <section class="stuck_result_container" id="endpoint-5" data-is-visible="false" >
+		
+			<div class="footer-logo tx-center">
+				
+				<img src="assets/logo.png">
+				
+			</div>
+           
+		   <div class="stuck_result">
+                <div class="stuck_result_img">
+				<img src="assets/icons-05.svg">
+                </div>
+                <div class="stuck_result_text">
+                    <h3>Get Moving</h3>
+						<p>It's impossible to be stuck and moving at the same time. You've let yourself sink into a place of stagnation and despair, and you won't get out till you get up and go somewhere. Play some powerful music in your earbuds and go for a run, dance it out in your living room, or dedicate yourself to a daily yoga practice. If you have access to a beach or pool, swimming is an excellent way to let the water wash your anxieties away so you can keep your movement going and carry it forward into the process of working toward your other goals.</p>
+
+                </div>
+                
+            </div>
+			<div class="resourc-link">
+			<button onclick="reset(q1)">Start Again</button>
+			<h3> Resources</h3>
+				
+		
+				
+				<p><a href="https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes">https://psychcentral.com/blog/feeling-stuck-in-life-tips-to-move-forward#causes</a></p>			
+				<p><a href="https://www.divaswithapurpose.com/15-questions-to-ask-yourself/">https://www.divaswithapurpose.com/15-questions-to-ask-yourself/</a></p>					
+				<p><a href="https://lonerwolf.com/soul-searching/">https://lonerwolf.com/soul-searching/</a></p>					
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a>	</p>				
+				<p><a href="https://janiewhittemore.com/feeling-stuck/">https://janiewhittemore.com/feeling-stuck/</a></p>					
+				<p><a href="https://www.betterup.com/blog/feeling-stuck">https://www.betterup.com/blog/feeling-stuck</a></p>					
+				<p><a href="https://www.shinesheets.com/how-to-get-unstuck-in-your-life/">https://www.shinesheets.com/how-to-get-unstuck-in-your-life/</a></p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359">https://www.psychicsource.com/article/life-destiny-meaning/feeling-stuck-try-a-life-audit/21359</a>	</p>			
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869">https://www.psychicsource.com/article/life-destiny-meaning/the-dance-between-light-and-shadow-by-psychic-izzy/20869</a>	</p>				
+				<p><a href="https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410">https://www.psychicsource.com/article/health-wellness/feeling-stuck-raise-your-vibration-and-develop-your-intuition-by-psychic-ava/15410</a></p>	
+				<p><a href="https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725">https://www.psychicsource.com/article/life-destiny-meaning/stuck-in-a-rut-4-ways-to-get-out-now/7725</a>	</p>	
+				<p><a href="https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116">https://www.psychicsource.com/article/health-wellness/5-ways-to-help-you-feel-unstuck/7116</a></p>	
+			</div>
+        </section>
+
+		
+        <!------- Final Output Area -------------->
+
+
+    </div>
+
+    <script>
+        // Loding Initails images
+         
+        function test(current, next) {
+            setTimeout(function () {
+                var current_question = document.getElementById(current);
+
+                current_question.setAttribute('data-value', 'visited');
+                current_question.setAttribute('data-active', 'false');  // Hide Question after clicking on it
+
+                //Show End point
+                if (next == "endpoint-1") {
+                    document.getElementById('main-container').style.backgroundImage = "url('assets/background-image-2.jpg')";
+                    document.getElementById('endpoint-1').setAttribute('data-is-visible', 'true');
+                    document.getElementsByClassName('bullets-container')[0].setAttribute('data-active', 'false');
+					 document.getElementById('stuck_head').style.display = "none";
+
+                } else if (next == "endpoint-2") {
+                    document.getElementById('main-container').style.backgroundImage = "url('assets/background-image-2.jpg')";
+                    document.getElementById('endpoint-2').setAttribute('data-is-visible', 'true');
+					document.getElementsByClassName('bullets-container')[0].setAttribute('data-active', 'false');
+					document.getElementById('stuck_head').style.display = "none";
+                } else if (next == "endpoint-3") {
+                    document.getElementById('main-container').style.backgroundImage = "url('assets/background-image-2.jpg')";
+                    document.getElementById('endpoint-3').setAttribute('data-is-visible', 'true');
+                    document.getElementsByClassName('bullets-container')[0].setAttribute('data-active', 'false');
+					document.getElementById('stuck_head').style.display = "none";
+                } else if (next == "endpoint-4") {
+                    document.getElementById('main-container').style.backgroundImage = "url('assets/background-image-2.jpg')";
+                    document.getElementById('endpoint-4').setAttribute('data-is-visible', 'true');
+                    document.getElementsByClassName('bullets-container')[0].setAttribute('data-active', 'false');
+					document.getElementById('stuck_head').style.display = "none";
+                } else if (next == "endpoint-5") {
+                    document.getElementById('main-container').style.backgroundImage = "url('assets/background-image-2.jpg')";
+                    document.getElementById('endpoint-5').setAttribute('data-is-visible', 'true');
+                    document.getElementsByClassName('bullets-container')[0].setAttribute('data-active', 'false');
+					document.getElementById('stuck_head').style.display = "none";
+                } else {
+                    document.getElementById(next).setAttribute('data-active', 'true');  // Show Next Question after clicking on previous one
+
+                }
+
+                
+
+//Bullets hide / show
+                if (current === "") {
+                    document.getElementById('bullet-1').setAttribute('data-bullet', 'visited');
+                }else if (current === "q1") {
+                    document.getElementById('bullet-1').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-2').setAttribute('data-bullet', 'visited');
+                } else if (current === "q2") {
+                    document.getElementById('bullet-1').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-2').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-3').setAttribute('data-bullet', 'visited');
+                } else if (current === "q3") {
+                    document.getElementById('bullet-1').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-2').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-3').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-4').setAttribute('data-bullet', 'visited');
+                } else if (current === "q4") {
+                    document.getElementById('bullet-1').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-2').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-3').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-4').setAttribute('data-bullet', '');
+                    document.getElementById('bullet-5').setAttribute('data-bullet', 'visited');
+                }
+
+            }, 500);
+        }
+
+        function reset(rec) {
+            document.getElementsByClassName('bullets-container')[0].setAttribute('data-active', 'true');
+            //Enable First Slides
+            rec.setAttribute('data-active', 'true');
+            q1.setAttribute('data-value', '');
+            q2.setAttribute('data-value', '');
+            q3.setAttribute('data-value', '');
+            q4.setAttribute('data-value', '');
+            q5.setAttribute('data-value', '');
+
+            // Reseting bullets
+            document.getElementById('bullet-1').setAttribute('data-bullet','visited'); 
+            document.getElementById('bullet-2').setAttribute('data-bullet',''); 
+            document.getElementById('bullet-3').setAttribute('data-bullet',''); 
+            document.getElementById('bullet-4').setAttribute('data-bullet',''); 
+            document.getElementById('bullet-5').setAttribute('data-bullet',''); 
+
+            // Reseting Initails images
+            
+                document.getElementById('main-container').style.backgroundImage = "url('assets/background-image.jpg')";
+				
+            
+            //Disable All endpoint
+            document.getElementById('endpoint-1').setAttribute('data-is-visible', 'false');
+            document.getElementById('endpoint-2').setAttribute('data-is-visible', 'false');
+            document.getElementById('endpoint-3').setAttribute('data-is-visible', 'false');
+            document.getElementById('endpoint-4').setAttribute('data-is-visible', 'false');
+            document.getElementById('endpoint-5').setAttribute('data-is-visible', 'false');
+			document.getElementById('stuck_head').style.display = "block";
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
