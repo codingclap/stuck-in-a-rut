@@ -319,7 +319,7 @@
 }
 @media screen and (max-width: 450px) {
 .stuck_result_text p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 22px;
 }
 .stuck_result_text h3 {
@@ -329,7 +329,7 @@
   max-width: 150px;
 }
 .stuck .stuck_heading h1 {
-  font-size: 35px ! important;
+  font-size: 38px ! important;
 }
 .stuck .header-logo img {
   width: 100%;
@@ -337,13 +337,13 @@
 }
 .stuck_text p {
   line-height: 24px !important;
-  font-size: 14px;
+  font-size: 15px;
 }
 .stuck_main_container .options .option {
-  font-size: 14px !important;
+  font-size: 15px !important;
 }
 .stuck .slide h3 {
-	font-size: 18px ! important;
+	font-size: 22px ! important;
 }
 .stuck_main_container .resourc-link button::after{
 	right: 70px;
