@@ -68,10 +68,6 @@
  .stuck_main_container{
     border:1px solid black;
  }
- .stuck_main_container .options .option:hover {
-	background-color: #fbc379;
-  transition: 0.1s ease-in-out;
-}
  .stuck_main_container > section { 
      display: flex;
      flex-direction: column;
@@ -87,7 +83,7 @@
     
  }
 .stuck.stuck_slider_container.wrapper{
-	max-width: 75ch;
+	max-width: 63ch;
 }
 .stuck_text p {
   color: #fff;
@@ -165,13 +161,16 @@
   font-weight: normal;
   font-size: 17px;
 }
+.stuck_main_container .options .option:hover {
+	background-color: #fbc379;
+}
 .stuck_main_container .options .option input[type="radio"] {
     display: none;
 }
 .stuck_main_container .options .option label {
   cursor: pointer;
   width: 100%;
-  padding: 14px 61px;
+  padding: 12px 61px;
 }
 .stuck_main_container .options input[type="radio"]:checked+label {
     background-color:#fbc379;
@@ -244,7 +243,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 .stuck_result::before {
   content: '';
@@ -255,7 +254,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  top: -45px;
+  top: -55px;
 }
 .stuck_result::after {
   content: '';
@@ -266,7 +265,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  bottom: -40px;
+  bottom: -55px;
 }
 .stuck_result_text h3 {
   color: #F7984E;
@@ -281,26 +280,26 @@
   color: #fff;
   margin-top: 6px;
 }
-.stuck_main_container .resourc-link button::after{
+.stuck_main_container .resourc-link button::after {
   content: '';
   position: absolute;
-  background-image: url('assets/arrow.png');
+  background-image: url('assets/arrow.svg');
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50%;
-  top: 5px;
-  right: 65px;
+  background-size: 35%;
+  top: 1px;
+  right: 63px;
 }
 .stuck_main_container .resourc-link button {
   position: relative;
   border: none;
   background: transparent;
   color: #F7984E;
-  font-family: "Cabin-Regular";
+	font-family: 'Cabin-Bold';
   font-size: 20px;
-  margin: 55px 0;
+  margin: 40px 0;
   cursor: pointer;
 }
 .resourc-link h3 {
@@ -348,6 +347,15 @@
   line-height: 0;
 }
 @media screen and (max-width: 400px) {
+	.stuck_result_text p {
+  font-size: 16px;
+	}
+.stuck_result_text h3 {
+  font-size: 30px;
+}  
+.stuck_result_img img {
+  max-width: 180px;
+}
 .stuck .stuck_heading h1 {
   font-size: 50px ! important;
 }
@@ -364,6 +372,12 @@
 }
 
 @media screen and (max-width: 768px) {
+	.stuck_result::after {
+				bottom: -65px;
+	}
+	.stuck_result::before {
+		top: -65px;
+	}
 .stuck .stuck_heading h1 {
   font-size: 60px;
 }	
@@ -387,7 +401,7 @@
   margin-top: 20px;
 }
 .stuck_result {
-  display: grid;
+  flex-direction: column;
 }
 .stuck_main_container .options .option label {
   cursor: pointer;
