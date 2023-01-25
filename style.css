@@ -317,7 +317,7 @@
   padding: 0;
   line-height: 0;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 .stuck_result_text p {
   font-size: 14px;
   line-height: 22px;
